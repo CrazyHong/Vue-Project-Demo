@@ -1,0 +1,94 @@
+@base-color: #4295d7;
+@stub-color: #fb6223;
+@title-grey: #333;
+@content-grey: #666;
+@border-grey:#c8c7cc;
+@icon-grey:#929292;
+@sub-grey: #999;
+@icon-grey: #777;
+@split-grey: #ccc;
+@bg-grey: #f8f8f8;
+@blue:#0085d7;
+@trans-gray: rgba(0,0,0,.4);
+
+@header-title-size: 18px;
+@title-size: 16px;
+@base-size: 14px;
+@sub-size: 12px;
+@nav-size: 12px;
+@decorate-title-grey:#ddd;
+@decorate-border-grey:#cbc9cc;
+
+//常用颜色
+@color-default: #CCA372;
+@color-white: #fff;
+@color-dark: #333;
+@color-lighter-dark: #666;
+@color-gray-dark: #999;
+@color-gray: #c9c9c9;
+@color-lighter-gray: #e5e5e5;
+@color-blue: #00a0f8;
+@color-blue-dark: #0472bc;
+@color-wise-blue: #0085d7;
+@color-orange: #FF6D37;
+@color-orange-dark: #f15a0c;
+@color-lighter-yellow: #fcff00;
+@color-yellow: #ffb107;
+@color-yellow-dark: #f09000;
+@color-green: #06bf04;
+@color-green-dark: #388415;
+@color-red: #d10a0a;
+@color-red-dark: #b93232;
+@color-danger: #d43f3a;
+
+.ellipsis{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal!important;
+  word-break: normal!important;
+}
+//.border-img{
+//  -webkit-border-image: url(~imgs/wap/border-line.png) 2 stretch;
+//  -moz-border-image: url(~imgs/wap/border-line.png) 2 stretch;
+//  border-image: url(~imgs/wap/border-line.png) 2 stretch;
+//}
+
+//border函数 css3以下浏览器
+.border-all(@width:1px,@style:solid,@color:@color-lighter-gray){
+  .border-img;
+  border: @width @style @color;
+}
+
+.border-top-bottom(@width:1px,@style:solid,@color:@color-lighter-gray){
+  .border-img;
+  border-top: @width @style @color;
+  border-bottom: @width @style @color;
+}
+.border-top-right(@width:1px,@style:solid,@color:@color-lighter-gray){
+  .border-img;
+  border-top: @width @style @color;
+  border-right: @width @style @color;
+}
+
+.border-top(@width:1px,@style:solid,@color:@color-lighter-gray){
+  .border-img;
+  border-top: @width @style @color;
+}
+.border-right(@width:1px,@style:solid,@color:@color-lighter-gray){
+  .border-img;
+  border-right: @width @style @color;
+}
+.border-right-bottom(@width:1px,@style:solid,@color:@color-lighter-gray){
+  .border-img;
+  border-right: @width @style @color;
+  border-bottom: @width @style @color;
+}
+.border-bottom(@width:1px,@style:solid,@color:@color-lighter-gray){
+  .border-img;
+  border-bottom: @width @style @color;
+}
+.border-left(@width:1px,@style:solid,@color:@color-lighter-gray){
+  .border-img;
+  border-left: @width @style @color;
+}
